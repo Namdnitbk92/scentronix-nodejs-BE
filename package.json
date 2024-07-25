@@ -1,0 +1,33 @@
+{
+  "name": "betasks-server-priority-finder",
+  "version": "1.0.0",
+  "description": "A project to find the online server with the lowest priority.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "start": "tsc && node dist/server.js",
+    "dev": "tsc-watch --onSuccess 'node dist/server.js'"
+  },
+  "keywords": [],
+  "author": "NamDN",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.14.12",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.3",
+    "tsc-watch": "^4.6.0",
+    "typescript": "^5.5.4"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node"
+  }
+}
